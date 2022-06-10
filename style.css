@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.front {
+    width: 100vw;
+    height: 100vh;
+}
+
+a.navbar-brand {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button.btn.btn-bg-primary {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container .login, .container1 .signup{
+    width: 400px;
+    height: 500px;
+    border: 4px solid #ccc;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform-style:unset;
+    backface-visibility: hidden;
+    background-color: #fff;
+    border-radius: 40px;
+    transition: 1s ease-in-out;
+}
+
+section.login {
+    display: none;
+}
+.container .login{
+    transform: perspective(600px) rotateY(0deg);
+}
+.container1 .signup{
+    transform: perspective(600px) rotateY(180deg);
+    height: 560px;
+}
+
+
+.active .login{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.active .signup{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+
+.login .logo h3{
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+    align-items: center;
+    margin-left: 0%;
+    margin-top: 2rem;
+}
+
+.signup .logo h3{
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+    align-items: center;
+    margin-left: 0%;
+    margin-top: 2rem;
+}
+
+.login input, .signup input{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid #000;
+    margin-top: 2rem;
+
+}
+
+.login input[type=submit], .signup input[type=submit] {
+    width: 40%;
+    height: 40px;
+    margin: 0 2px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 2rem 7rem;
+    color: #fff;
+    border: none;
+
+}
+ 
+.login .media, .signup .media{
+    margin-left: 2rem;
+    list-style: none;
+    
+}
+
+.login .media li, .signup .media li{
+   
+   margin: 2rem 20px;
+   padding: 5px;
+   
+} 
+p{
+    margin: -1rem 3rem;
+}
+
+.none1{
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    /* background-color: #00eaff; */
+    z-index: -2000;
+    transition: 1s ease-in-out;
+    
+}
+
+.none2{
+    width: 100%;
+    height: 150vh;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    background-color: rgb(128, 0, 122);
+    z-index: -2000;
+    transition: 1s ease-in-out;
+    color: transparent;
+    -webkit-text-stroke-color: transparent;
+    
+}
+.none .content{
+    margin-top: 35vh;
+    transition: 1s ease-in-out;
+}
+
+
+
+
+.none2 p, .none2 {
+    color: transparent;
+    -webkit-text-stroke-color: transparent;
+    margin-left: 10px;
+
+}
+
+.active .none1, .active .none1 p, .active .none1 h1{
+    top: 0;
+    left: 50%;
+    bottom: 30%;
+    color: transparent;
+    -webkit-text-stroke-color: transparent;
+}
+
+.active .none2, .active .none2 p, .active .none2 h1{
+    top: 0;
+    left: 0;
+    bottom: 30%;
+    color: rgb(216, 44, 44);
+   
+}
+
+@media screen and (max-width: 768px){
+    .container .login, .container1 .signup{
+        width: 400px;
+        height: 500px;
+        border: 4px solid #ccc;
+        position: absolute;
+        top: 20%;
+        left: 40%;
+        transform-style:unset;
+        backface-visibility: hidden;
+        background-color: #fff;
+        border-radius: 40px;
+        transition: 1s ease-in-out;
+    }
+}

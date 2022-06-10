@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+                 <meta name="viewport" content="with=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatibler" content="ie=edge">
+                <link rel="stylesheet" href="style.css">
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+                    </style>
+                
+         </head>
+        <title> Login/ Sign up Form</title>
+        <body>
+            
+            
+            <div class="front">
+            
+                <nav class="navbar fixed-top navbar-expand-1g navbar-light bg-light p md-3">
+                    <div class="container"> 
+                    <a href="#" class="navbar-brand">MARIE NICOLE</a>
+                    <button class="btn btn-bg-primary" onclick= "document.getElementById('login')
+                    .style.display='block'" style= "width:auto;"
+                     type="button">LOGIN</button>
+                </nav>
+
+            <div class="container">
+
+
+                <section id="login" class="login">
+                    <div class="logo">
+                        <h3 class="mb-4 text-center fs-1 animate__animated animate__heartBeat animate__infinite">WELCOME</h3>
+                    </div>
+                    <form action="">
+                        <input type="email" class="form-control" placeholder="Email">
+                        <input type="password" class="form-control" placeholder="Password">
+        
+                        <input type="submit" value="LogIn" class="bg-primary">
+        
+                        <p>You don't have an account? <a href="#"  onclick="change()">SignUp</a> </p>          
+                        
+                    </form>
+                </section>
+            </div>
+        
+   
+            <div class="container1">
+        
+        
+                <section class="signup">
+                    <div class="logo">
+                        <h3 class="mb-4 text-center">Sign up</h3>
+                    </div>
+        
+        
+                    <form action="">
+        
+                        <input type="text" class="form-control" placeholder="User Name">
+                        <input type="email" class="form-control" placeholder="Email">
+                        <input type="password" class="form-control" placeholder="Password">
+                        <input type="password" class="form-control" placeholder="Confirm Password">
+        
+        
+        
+                        <input type="submit" value="SignUp" class="bg-success">
+        
+                        <p>You already have an account? <a href="#" onclick="change()">LogIn</a> </p>
+        
+                    </form>
+        
+                </section>
+        
+                <div class="none">
+                    <div class="none1">
+                        <div class="content"></div>
+                    </div>
+        
+        
+                    <div class="none2">
+                        <div class="content"></div>
+                    </div>
+                </div>
+        
+            </div>
+        
+            <script>
+                function change(){
+                    var e=document.querySelector('.container');
+                    e.classList.toggle('active');
+        
+        
+                    var e=document.querySelector('.container1');
+                    e.classList.toggle('active');
+                } 
+                
+                </script>
+
+                <script>
+                    var modal= document.getElementById('login');
+                    window.onclick = function(event) {
+                         if (event.target == modal) {
+                         modal.style.display = "none";
+                     }
+                        }
+                </script>
+    
+</div>
+        </body>
+        
+    </html>
+
+
+    
+    
